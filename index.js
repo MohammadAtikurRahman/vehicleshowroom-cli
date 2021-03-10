@@ -68,14 +68,21 @@ const listOfCar = () => {
                 console.info('Vehicle id:', vehicle._id);
                 console.info('Vehicle Type:', vehicle.vehicleType);
                 console.info('Engine Type:', vehicle.engineType);
-                // console.info('Engine Type:', vehicle.enginetype);
-                // console.info('Engine Power:', vehicle.enginepower);
-                // console.info('Tire Size:', vehicle.tiresize);
-                // console.info('Cylinder Type:', vehicle.cylindertype);
+            
+                console.info('Engine Power:', vehicle.enginePower);
+                console.info('Tire Size:', vehicle.tireSize);
 
-                // console.info('Engine Weight:', vehicle.engineweight);
+                if(vehicle.vehicleType === "sports" ){
+                console.info('Turbo available:', vehicle.turbo);
 
-                // console.info('Number of visitors:', vehicle.visitors);
+                }
+
+                if (vehicle.vehicleType === "heavy"){
+                console.info('Engine Weight:', vehicle.weight);
+                }
+
+
+                console.info('Number of visitors:', vehicle.visitors);
                 console.info('------------------------------------');
             })
 
@@ -96,34 +103,41 @@ const listOfVisitor = () => {
         .then(vehicleshowrooms => {
 
             vehicleshowrooms.map(vehicle => {
-                console.info('vehicle:', vehicle);
+              //  console.info('vehicle:', vehicle);
 
-                // if (vehicle.cartype == "Sports" || vehicle.cartype == "sports") {
+                if (vehicle.vehicleType === "sports" ) {
 
-                //     // console.info('Number of visitors:', vehicle.visitors+20);
+                    // console.info('Number of visitors:', vehicle.visitors+20);
 
-                //     const minimumRange = vehicle.visitors + 20
+                    const minimumRange = vehicle.visitors + 20
+                    console.info('Vehicle Type', vehicle.modelNumber);
+                    console.info('Vehicle Type', vehicle.vehicleType);
 
-                //     console.info('Number of visitors:', Math.floor(Math.random() * (60 - minimumRange + 1) + minimumRange))
 
-                // }
+                    console.info('Number of visitors:', Math.floor(Math.random() * (60 - minimumRange + 1) + minimumRange))
 
-                // if (vehicle.cartype == "Normal" || vehicle.cartype == "normal") {
+                }
 
-                //     const minimumRange = vehicle.visitors
+                if (vehicle.vehicleType === "normal" ) {
 
-                //     console.info('Number of visitors:', Math.floor(Math.random() * (40 - minimumRange + 1) + minimumRange))
+                    const minimumRange = vehicle.visitors
+                    console.info('Vehicle Type', vehicle.modelNumber);
+                    console.info('Vehicle Type', vehicle.vehicleType);
 
-                // }
-                // if (vehicle.cartype == "Heavy" || vehicle.cartype == "heavy") {
+                    console.info('Number of visitors:', Math.floor(Math.random() * (40 - minimumRange + 1) + minimumRange))
 
-                //     const minimumRange = vehicle.visitors
+                }
+                if (vehicle.vehicleType === "heavy" ) {
 
-                //     console.info('Number of visitors:', Math.floor(Math.random() * (40 - minimumRange + 1) + minimumRange))
+                    const minimumRange = vehicle.visitors
+                    console.info('Vehicle Type', vehicle.modelNumber);
+                    console.info('Vehicle Type', vehicle.vehicleType);
 
-                // }
+                    console.info('Number of visitors:', Math.floor(Math.random() * (40 - minimumRange + 1) + minimumRange))
 
-                // console.info('Number of visitors:', vehicle.visitors);
+                }
+
+               // console.info('Number of visitors:', vehicle.visitors);
                 console.info('------------------------------------');
             })
 

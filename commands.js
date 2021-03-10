@@ -110,7 +110,7 @@ program
                 } else {
                     prompt(questionsNormalVehicle)
                         .then(answersNormalVehicle => {
-                            console.info('questionsNormalVehicle', answersNormalVehicle);
+                          //  console.info('questionsNormalVehicle', answersNormalVehicle);
                             answers.engineType = answersNormalVehicle.engineType;
                             addCar(answers);
                         });
