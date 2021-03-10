@@ -66,6 +66,7 @@ const listOfCar = () => {
             vehicleshowrooms.map(vehicle => {
                 console.info('------Welcome Vehicles Showroom------');
                 console.info('Vehicle id:', vehicle._id);
+                console.info('Vehicle model:', vehicle.modelNumber);
                 console.info('Vehicle Type:', vehicle.vehicleType);
                 console.info('Engine Type:', vehicle.engineType);
             
@@ -82,7 +83,7 @@ const listOfCar = () => {
                 }
 
 
-                console.info('Number of visitors:', vehicle.visitors);
+                // console.info('Number of visitors:', vehicle.visitors);
                 console.info('------------------------------------');
             })
 
