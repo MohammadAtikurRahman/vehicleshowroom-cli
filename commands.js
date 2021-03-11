@@ -9,7 +9,6 @@ const {
     listOfCar,
     listOfVisitor
 } = require('./index');
-
 // showroom question panel
 const questions = [
     {
@@ -58,34 +57,9 @@ const questionsHeavyVehicle = [
     }
 ];
 
-function showData() {
-    const data = 1000;
-    console.info(data)
-}
-
-// function getRandomIntInclusive(min, max) {
-//     min = Math.ceil(min);
-//     max = Math.floor(max);
-//     console.info(Math.floor(Math.random() * (max - min + 1) + min))
-//       return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
-// }
-
-// getRandomIntInclusive(50, 40);
-
-
 program
     .version('1.0.0')
     .description('Command Line System for Vehicle Showroom')
-
-
-// program
-//     .command('add <cartype> <modelnumber> <enginetype> <enginepower> <tiresize>')
-//     .alias('a')
-//     .description('Add a car')
-//     .action((cartype, modelnumber, enginetype, enginepower, tiresize ) => {
-//         addCar({ cartype, modelnumber, enginetype, enginepower, tiresize });
-//    });
-
 program
     .command('add')
     .alias('a')
@@ -110,7 +84,6 @@ program
                 } else {
                     prompt(questionsNormalVehicle)
                         .then(answersNormalVehicle => {
-                          //  console.info('questionsNormalVehicle', answersNormalVehicle);
                             answers.engineType = answersNormalVehicle.engineType;
                             addCar(answers);
                         });
@@ -125,7 +98,6 @@ program
     .description('Find The car by model number or engine power ')
     .action(car => findCar(car));
 
-
 program
     .command('remove <_id>')
     .alias('r')
@@ -138,14 +110,6 @@ program
     .alias('l')
     .description('list all car in  Vehicle showroom')
     .action(_id => listOfCar(_id));
-
-
-// program
-//     .command('visitor')
-//     .alias('v')
-//     .description('all visitors')
-//     .action(showData);
-
 program
     .command('visitor')
     .alias('v')

@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 // vehicle showroom Schema
 const vehicleshowroomSchema = mongoose.Schema({
     modelNumber: {
@@ -39,6 +38,5 @@ const vehicleshowroomSchema = mongoose.Schema({
         default: 30
     },
 });
-
 // Define and export
 module.exports = mongoose.model('Vehicleshowroom', vehicleshowroomSchema);
