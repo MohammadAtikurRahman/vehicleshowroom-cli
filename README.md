@@ -1,4 +1,4 @@
-# Vehicleshowroom-cli CLI [![Actions Status][gh-actions-badge]][gh-actions] [![Node Version][node-badge]][npm] [![NPM version][npm-badge]][npm]
+# Vehicleshowroom-cli
 
 The Vehicleshowroom Command Line Interface (CLI) can be used to your Vehicleshowroom-cli project from the command line.
 
