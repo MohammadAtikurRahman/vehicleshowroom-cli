@@ -54,6 +54,9 @@ After installing node, this project will need yarn too, so just run the followin
     $ git clone git@github.com:MohammadAtikurRahman/vehicleshowroom-cli.git
     $ cd vehicleshowroom-cli
     $ npm install
+    
+##  Create Symlink
+    $ npm link
 
 ## Commands
 
