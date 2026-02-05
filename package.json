@@ -1,6 +1,6 @@
 {
   "name": "vehicleshowroom-cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Command Line System for Vehicle Showroom",
   "main": "index.js",
   "preferGlobal": true,
